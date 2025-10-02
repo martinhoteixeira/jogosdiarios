@@ -10,16 +10,16 @@
 
 @media (max-width: 768px) {
   .game-list-container {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    display: grid;
+    grid-auto-flow: column; 
+    grid-auto-columns: minmax(200px, 1fr); 
     gap: 16px;
-    padding: 10px;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
   }
-}
 
-@media (max-width: 480px) {
-  .game-list-container {
-    grid-template-columns: 1fr; 
-    gap: 12px;
-    padding: 8px;
+  .game-list-container > * {
+    scroll-snap-align: start; 
   }
 }
