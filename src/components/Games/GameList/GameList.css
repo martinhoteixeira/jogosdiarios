@@ -17,9 +17,12 @@
     overflow-x: auto; 
     scroll-snap-type: x mandatory; 
     -webkit-overflow-scrolling: touch; 
+    
+    padding-left: 16px; 
+    padding-right: 16px; 
   }
 
   .game-list-container > * {
-    scroll-snap-align: start; 
+    scroll-snap-align: start;
   }
 }
