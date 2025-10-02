@@ -9,26 +9,13 @@
   padding-top: 100px; 
 }
 
-
 @media (max-width: 768px) {
   .game-list-container {
     display: grid;
-    grid-auto-flow: column; 
-    grid-auto-columns: minmax(200px, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
     gap: 16px;
-    overflow-x: auto; 
-    scroll-snap-type: x mandatory; 
-    -webkit-overflow-scrolling: touch; 
-
     padding-left: 16px; 
-    padding-right: 16px; 
+    padding-right: 16px;
     padding-top: 100px; 
-
-    scroll-padding-left: 16px;
-    scroll-padding-top: 100px; 
-  }
-
-  .game-list-container > * {
-    scroll-snap-align: start; 
   }
 }
