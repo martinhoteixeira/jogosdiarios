@@ -7,3 +7,19 @@
   gap: 24px;
   padding: 20px;
 }
+
+@media (max-width: 768px) {
+  .game-list-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-list-container {
+    grid-template-columns: 1fr; 
+    gap: 12px;
+    padding: 8px;
+  }
+}
