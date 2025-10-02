@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import './Header.css';
 
 export default function Header() {
     const navigate = useNavigate();
@@ -10,9 +11,9 @@ export default function Header() {
             </div>
             <nav className="nav">
                 <button onClick={() => navigate('/')}>Jogos</button>
-                <button onClick={() => navigate('/Sobre')}>Sobre</button>
-                <button onClick={() => navigate('/Login')}>Login</button>
-                <button onClick={() => navigate('/Contato')}>Contato</button>
+                <button onClick={() => navigate('/sobre')}>Sobre</button>
+                <button onClick={() => navigate('/login')}>Login</button>
+                <button onClick={() => navigate('/contato')}>Contato</button>
             </nav>
         </header>
     );
